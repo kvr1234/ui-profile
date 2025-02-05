@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h2>EX-1 => input element</h2>
+    <form action="">
+        <dl>
+            <dt>User Name</dt>
+            <dd><input></dd>
+            <dt>Password</dt>
+            <dd><input></dd>
+            <dt>Phone No</dt>
+            <dd><input></dd>
+            <dt>Age</dt>
+            <dd><input></dd>
+        </dl>
+        <button>Submit</button>
+    </form>
+    <h2>EX-2 => Every form element should have a name</h2>
+    <form action="">
+        <dl>
+            <dt>State</dt>
+            <dd><input type="text"></dd>
+            <dt>City</dt> 
+            <dd><input type="text" name="txtCity"></dd>
+        </dl>
+        <button>Submit</button>
+    </form>
+    <h2>EX-3 => Defining a default value for an element in the form</h2>
+        <form action="">
+            <dl>
+                <dt>College</dt>
+                <dd><input type="text" name="txtCollege" value="Gate"></dd>
+                <dt>Branch</dt> 
+                <dd><input type="text" name="txtBranch"></dd>
+            </dl>
+            <button>Submit</button>
+        </form>
+    </form>
+    <h2>EX-4 => Readonly attribute</h2>
+    <form action="">
+        <dl>
+            <dt>Name</dt>
+            <dd><input type="text" name="txtName"></dd>
+            <dt>Adhar No</dt> 
+            <dd><input type="number" name="numberAdhar" value="9876543210" readonly></dd>
+        </dl>
+        <button>Submit</button>
+    </form>
+    <h2>EX-5 => Disabled attribute</h2>
+    <form action="">
+        <dl>
+            <dt>Nationality</dt> 
+            <dd><input type="text" name="txtNationality"></dd>
+            <dt>Caste</dt> 
+            <dd><input type="text" name="txtCaste" value="BC-D" disabled></dd>
+        </dl>
+        <button>Submit</button>
+    </form>
+    <h2>EX-6 => placeholder attribute</h2>
+    <form action="">
+        <dl>
+            <dt>Full Name</dt> 
+            <dd><input type="text" name="txtFirst" placeholder="Enter First Name"></dd>
+            <dd><input type="text" name="txtLast" placeholder="Enter Last Name"></dd>
+            <dt>Email</dt> 
+            <dd><input type="email" name="emailEmail" placeholder="Enter email"></dd>
+        </dl>
+        <button>Submit</button>
+    </form>
+    <h2>EX-7 => size attribute</h2>
+    <form action="">
+        <dl>
+            <dt>OTP</dt> 
+            <dd><input type="number" name="numberOTP" size="40" placeholder="Enter OTP"></dd>
+        </dl>
+        <button>Submit</button>
+    </form>
+    <h2>EX- 8 & 9 & 10 => maxlenght && minlenght && required && autofocus attributes</h2>
+    <form action="">
+        <dl>
+            <dt>User Id</dt> 
+            <dd><input type="text" name="txtUserId" minlength="8" maxlength="16" required autofocus></dd>
+        </dl>
+        <button>Submit</button>
+    </form>
+    <h2>EX-11 => list attribute</h2>
+    <form align="center">
+        <h1>Google</h1>
+        <input type="text" name="txtSearch" size="40" list="topics">
+        <datalist id="topics">
+            <option>HTML Examples</option>
+            <option>CSS Examples</option>
+            <option>HTML Projects</option>
+            <option>CSS Projects</option>
+            <option>JS Examples</option>
+            <option>JS Projects</option>
+            <option>Python Examples</option>
+            <option>Python Projects</option>
+        </datalist>
+        <p>
+            <button>Search</button>
+        </p>
+    </form>
+    </body>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        h2 {
+            color: green;
+        }
+        /*We will have common height for all the slids and images*/
+        img {
+            height: 320px;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <h2>Carousel with Sliding images & Controls</h2>
+    <div class="carousel slide carousel-dark" id="banner-1" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active"> 
+                <img src="../public/images/slide-1.jpg" class="w-100 d-block">
+            </div>
+            <div class="carousel-item">
+                <img src="../public/images/slide-2.jpg" class="w-100 d-block">
+            </div>
+            <div class="carousel-item">
+                <img src="../public/images/slide-3.jpg" class="w-100 d-block">
+            </div>
+            <div class="carousel-item">
+                <img src="../public/images/slide-4.jpg" class="w-100 d-block">
+            </div>
+        </div>
+        <!--Keep carousel controls in between main div and inner div-->
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#banner-1">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#banner-1">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div><br><br>
+
+    <h2>Carousel with Fading images & without Controls</h2>
+    <div class="carousel carousel-fade" id="banner-2" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active"> 
+                <img src="../public/images/slide-1.jpg" class="w-100 d-block">
+            </div>
+            <div class="carousel-item">
+                <img src="../public/images/slide-2.jpg" class="w-100 d-block">
+            </div>
+            <div class="carousel-item">
+                <img src="../public/images/slide-3.jpg" class="w-100 d-block">
+            </div>
+            <div class="carousel-item">
+                <img src="../public/images/slide-4.jpg" class="w-100 d-block">
+            </div>
+        </div>
+    </div><br><br>
+
+    <h2>Carousel with sliding images & Indicators</h2>
+    <div class="carousel slide carousel-dark" id="banner-3" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active"> 
+                <img src="../public/images/slide-1.jpg" class="w-100 d-block">
+            </div>
+            <div class="carousel-item">
+                <img src="../public/images/slide-2.jpg" class="w-100 d-block">
+            </div>
+            <div class="carousel-item">
+                <img src="../public/images/slide-3.jpg" class="w-100 d-block">
+            </div>
+            <div class="carousel-item">
+                <img src="../public/images/slide-4.jpg" class="w-100 d-block">
+            </div>
+        </div>
+        <!--Keep carousel controls in between main div and inner div-->
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#banner-3">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#banner-3">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <!--Carousel Indiactors keep them under the controls buttons-->
+        <div class="carousel-indicators">
+            <button class="active" data-bs-slide-to="0" data-bs-target="#banner-3"></button>
+            <button data-bs-slide-to="1" data-bs-target="#banner-3"></button>
+            <button data-bs-slide-to="2" data-bs-target="#banner-3"></button>
+            <button data-bs-slide-to="3" data-bs-target="#banner-3"></button>
+        </div>
+    </div><br><br>
+
+    <h2>Carousel with - sliding images + Indicators + with Custom Timing Interval</h2>
+    <div class="carousel slide carousel-dark" id="banner-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1000ms"> 
+                <img src="../public/images/slide-1.jpg" class="w-100 d-block">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000ms">
+                <img src="../public/images/slide-2.jpg" class="w-100 d-block">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000ms">
+                <img src="../public/images/slide-3.jpg" class="w-100 d-block">
+            </div>
+            <div class="carousel-item" data-bs-interval="4000ms">
+                <img src="../public/images/slide-4.jpg" class="w-100 d-block">
+            </div>
+        </div>
+        <!--Keep carousel controls in between main div and inner div-->
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#banner-4">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#banner-4">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <!--Carousel Indiactors keep them under the controls buttons-->
+        <div class="carousel-indicators">
+            <button class="active" data-bs-slide-to="0" data-bs-target="#banner-4"></button>
+            <button data-bs-slide-to="1" data-bs-target="#banner-4"></button>
+            <button data-bs-slide-to="2" data-bs-target="#banner-4"></button>
+            <button data-bs-slide-to="3" data-bs-target="#banner-4"></button>
+        </div>
+    </div><br><br>
+
+
+    <h2>Carousel with - sliding form & images + Indicators + with Custom Timing Interval </h2>
+    <div class="carousel slide carousel-dark" id="banner-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <div class="d-flex justify-content-center align-items-center bg-warning" style="height: 320px; border: 1px solid black;">
+                    <div class="w-50">
+                        <p>Please register for more...</p>
+                        <form class="form-group">
+                            <input type="email" placeholder="Your Email" class="form-control"><br>
+                            <button class="btn btn-danger">Next <span class="bi bi-chevron-right"></span></button>
+                        </form><br>
+                        <a href="#"><span>help?</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="3000">
+                <div class="d-flex justify-content-center align-items-center bg-warning" style="height: 320px; border: 1px solid black;">
+                    <div class="w-50">
+                        <p>Please register for more...</p>
+                        <form class="form-group">
+                            <input type="password" placeholder="Your Password" class="form-control"><br>
+                            <button class="btn btn-danger">Get Started <span class="bi bi-chevron-right"></span></button>
+                        </form><br>
+                        <a href="#"><span>help?</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="3000ms"> 
+                <img src="../public/images/slide-1.jpg" class="w-100 d-block">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000ms">
+                <img src="../public/images/slide-2.jpg" class="w-100 d-block">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000ms">
+                <img src="../public/images/slide-3.jpg" class="w-100 d-block">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000ms">
+                <img src="../public/images/slide-4.jpg" class="w-100 d-block">
+            </div>
+        </div>
+        <!--Keep carousel controls in between main div and inner div-->
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#banner-5">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#banner-5">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <!--Carousel Indiactors keep them under the controls buttons-->
+        <div class="carousel-indicators">
+            <button class="active" data-bs-slide-to="0" data-bs-target="#banner-5"></button>
+            <button data-bs-slide-to="1" data-bs-target="#banner-5"></button>
+            <button data-bs-slide-to="2" data-bs-target="#banner-5"></button>
+            <button data-bs-slide-to="3" data-bs-target="#banner-5"></button>
+            <button data-bs-slide-to="4" data-bs-target="#banner-5"></button>
+            <button data-bs-slide-to="5" data-bs-target="#banner-5"></button>
+        </div>
+    </div><br><br>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
